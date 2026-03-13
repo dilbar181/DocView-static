@@ -314,6 +314,7 @@ aside {
   background: rgba(20, 30, 50, 0.6);
   border: 1px solid rgba(120, 150, 255, 0.2);
   border-radius: 14px;
+  max-width: 340px;
   min-height: 120px;
 }
 .step-num {
