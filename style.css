@@ -300,15 +300,20 @@ aside {
   margin-bottom: 20px;
 }
 .steps {
-  display: flex; align-items: center;
-  gap: 16px; flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  align-items: stretch;
 }
 .step {
-  display: flex; align-items: flex-start; gap: 14px;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: var(--r); padding: 20px;
-  flex: 1; min-width: 180px;
+  border-radius: var(--r);
+  padding: 20px;
+  height: 100%;
   box-shadow: var(--sh);
 }
 .step-num {
