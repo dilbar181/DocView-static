@@ -300,33 +300,38 @@ aside {
   margin-bottom: 20px;
 }
 .steps {
-  display: flex;
-  align-items: stretch;
-  justify-content: space-between;
-  gap: 20px;
-  flex-wrap: nowrap;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+  margin-top:24px;
 }
 .step {
-  flex: 1;
-  display: flex;
-  gap: 14px;
-  padding: 20px;
-  background: rgba(20, 30, 50, 0.6);
-  border: 1px solid rgba(120, 150, 255, 0.2);
-  border-radius: 14px;
-  max-width: 340px;
-  min-height: 120px;
+  flex:1;
+  display:flex;
+  gap:14px;
+  align-items:flex-start;
+  padding:20px;
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:12px;
+  box-shadow:var(--sh);
 }
 .step-num {
-  width: 32px; height: 32px;
-  background: var(--accent); color: #fff;
-  border-radius: 50%;
-  display: flex; align-items: center; justify-content: center;
-  font-size: 14px; font-weight: 800; flex-shrink: 0;
+  width:34px;
+  height:34px;
+  border-radius:50%;
+  background:#2563eb;
+  color:white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:600;
+  flex-shrink:0;
 }
 .step strong { display: block; font-size: 14px; margin-bottom: 4px; }
 .step div:last-child { font-size: 13px; color: var(--muted); line-height: 1.5; }
-.step-arrow { display: flex; align-items: center; justify-content: center; font-size: 22px; color: rgba(180, 200, 255, 0.6); width: 30px; }
+.step-arrow { font-size:22px; color:var(--faint); }
 
 /* Home recent */
 .home-recent { }
