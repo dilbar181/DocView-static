@@ -306,15 +306,9 @@ aside {
   align-items: stretch;
 }
 .step {
-  display: flex;
-  align-items: flex-start;
-  gap: 14px;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--r);
-  padding: 20px;
-  height: 100%;
-  box-shadow: var(--sh);
+  flex: 1;
+  min-width: 250px;
+  max-width: 320px;
 }
 .step-num {
   width: 32px; height: 32px;
